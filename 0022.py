@@ -1,7 +1,6 @@
 def generate_parentheses(n):
     '''
-    Leetcode 0022 (Medium)
-    Generate Parentheses
+    Leetcode 0022 (Medium): Generate Parentheses
     '''
     parentheses = []
     stack = []

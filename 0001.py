@@ -1,7 +1,6 @@
 def two_sum(nums, target):
     '''
-    Leetcode 0001 (Easy)
-    Two Sum
+    Leetcode 0001 (Easy): Two Sum
     '''
     diff = dict()
     

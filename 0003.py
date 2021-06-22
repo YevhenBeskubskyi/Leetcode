@@ -1,7 +1,6 @@
 def length_of_longest_substring(s):
     '''
-    Leetcode 0003 (Medium)
-    Longest Substring Without Repeating Character
+    Leetcode 0003 (Medium): Longest Substring Without Repeating Character
     '''
     letters = set()
     max_len = 0

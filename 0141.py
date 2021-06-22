@@ -7,6 +7,7 @@ class ListNode:
 def has_cycle(head):
     '''
     Leetcode 0141 (Easy): Linked List Cycle
+    https://leetcode.com/problems/linked-list-cycle/
     '''
     fast = head
     slow = head

@@ -1,7 +1,6 @@
 def unique_paths(m, n):
     '''
-    Leetcode 0062 (Medium)
-    Unique Paths
+    Leetcode 0062 (Medium): Unique Paths
     '''
     grid = [[1] * n for _ in range(m)]
     for i in range(1, m):

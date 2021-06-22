@@ -1,6 +1,7 @@
 def jump(nums):
     '''
     Leetcode 45 (Medium): Jump Game II 
+    https://leetcode.com/problems/jump-game-ii/
     '''
     jumps = [i for i in range(len(nums))]
     for i in range(len(jumps)):

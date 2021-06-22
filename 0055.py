@@ -1,6 +1,7 @@
 def can_jump(nums):
     '''
     Leetcode 0055 (Medium): Jump Game
+    https://leetcode.com/problems/jump-game/
     '''
     goal = len(nums) - 1
     for i in range(len(nums) -2, -1, -1):

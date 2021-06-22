@@ -1,7 +1,6 @@
 def daily_temperatures(temperatures):
     '''
-    Leetcode 0739 (Medium)
-    Daily Temperatures
+    Leetcode 0739 (Medium): Daily Temperatures
     '''
     stack = []
     res = [0] * len(temperatures)

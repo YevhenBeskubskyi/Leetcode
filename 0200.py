@@ -13,8 +13,7 @@ def bfs(i, j, grid):
 
 def num_of_islands(grid):
     '''
-    Leetcode 0200 (Medium)
-    Number of Islands
+    Leetcode 0200 (Medium): Number of Islands
     '''
     count = 0
     for i in range(len(grid)):

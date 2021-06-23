@@ -1,21 +1,18 @@
+# Leetcode 0141 (Easy): Linked List Cycle
+# https://leetcode.com/problems/linked-list-cycle/
+
+# Definition for singly-linked list.
 class ListNode:
-    
     def __init__(self, val):
         self.val = val
         self.next = None
 
-def has_cycle(head):
-    '''
-    Leetcode 0141 (Easy): Linked List Cycle
-    https://leetcode.com/problems/linked-list-cycle/
-    '''
-    fast = head
-    slow = head
-    
-    while fast and fast.next:
-        fast = fast.next.next
-        slow = slow.next
-        if fast == slow:
-            return True
-    
-    return False
+class Solution:
+    def hasCycle(self, head: ListNode) -> bool:
+        first, second = head, head
+        while second and second.next:
+            first = first.next
+            second = second.next.next
+            if first == second: 
+                return True
+        return False

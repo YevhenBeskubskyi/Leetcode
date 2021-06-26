@@ -3,20 +3,18 @@
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        result = ''
-        
-        for i in range(len(s)):
-            l, r = i, i
+        def helper(l, r):
             while l >= 0 and r < len(s) and s[l] == s[r]:
-                result = max(s[l:r+1], result, key=lambda x : len(x))
                 l -= 1
                 r += 1
+            return s[l+1:r]
+        
+        res = ''
+        k = lambda x: len(x)
         
         for i in range(len(s)):
-            l, r = i, i+1
-            while l >= 0 and r < len(s) and s[l] == s[r]:
-                result = max(s[l:r+1], result, key=lambda x : len(x))
-                l -= 1
-                r += 1
-                
-        return result
+            a = helper(i, i)
+            b = helper(i, i+1)
+            res = max(res, a, b, key=k)
+
+        return res
